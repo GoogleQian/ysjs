@@ -1,0 +1,56 @@
+version: '3'
+services:
+  mngbackend-service:
+    image: znss-api-mngbackend:0.1.0
+    container_name: znss-api-mngbackend
+    build:
+      context: mngbackend-api
+      dockerfile: Dockerfile-mngbackend-api
+    volumes:
+      - /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    command:
+      - echo 'Asia/Shanghai' >/etc/timezone
+    networks:
+      - znss
+    ports:
+      - 9191:9191
+
+  node:
+    image: znss-node-mngbackend:0.1.1
+    container_name: znss-node-mngbackend
+    build:
+      context: mngbackend-web
+      dockerfile: Dockerfile-mngbackend-node
+    command:
+      node /opt/dist/server.js
+    networks:
+      - znss
+    ports:
+      - 8192:8192
+   
+  mysql:
+    image: docker.io/mysql:5.7
+    container_name: znss-mysql
+    restart: always
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --max_allowed_packet=128M
+    ports:
+      - 3308:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: iswater
+      TZ: Asia/Shanghai
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/conf:/etc/mysql/conf.d
+      - ./mysql/logs:/logs
+    networks:
+      - znss
+     
+     
+networks:
+  znss:
+    external: false

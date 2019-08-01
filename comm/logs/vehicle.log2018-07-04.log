@@ -1,0 +1,725 @@
+2018-07-04 16:57:45:955 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6f2b958e: startup date [Wed Jul 04 16:57:45 CST 2018]; root of context hierarchy
+2018-07-04 16:57:46:609 Loading XML bean definitions from class path resource [server-spring.xml]
+2018-07-04 16:57:48:604 Loading XML bean definitions from class path resource [appcontext-consumer.xml]
+2018-07-04 16:57:48:692 using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-07-04 16:57:48:719 Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-07-04 16:57:50:591 Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-07-04 16:57:51:751 Skipping MapperFactoryBean with name 'carDataDao' and 'com.xiaohe.v2v.mapper.CarDataDao' mapperInterface. Bean already defined with the same name!
+2018-07-04 16:57:51:780 No MyBatis mapper was found in '[com.xiaohe.v2v.mapper]' package. Please check your configuration.
+2018-07-04 16:57:51:884 Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a187f14: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tcpServer,tbox-v1,com.alibaba.dubbo.config.RegistryConfig,notifyService,dubbo,com.xiaohe.hservice.HService,hService,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,carDataDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2018-07-04 16:57:56:125 {dataSource-1} inited
+2018-07-04 16:57:59:329  [DUBBO] The service ready on spring started. service: com.xiaohe.hservice.HService, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:57:59:496  [DUBBO] Export dubbo service com.xiaohe.hservice.HService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:57:59:497  [DUBBO] Export dubbo service com.xiaohe.hservice.HService to url dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:57:59:499  [DUBBO] Register dubbo service com.xiaohe.hservice.HService url dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=tbox-v1&dubbo=2.5.3&pid=10768&registry=zookeeper&timestamp=1530694679336, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:57:59:913  [DUBBO] Start NettyServer bind /0.0.0.0:20881, export /192.168.186.1:20881, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:57:59:990  [DUBBO] Load registry store file C:\Users\huaxuinfo001\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.xiaohe.hservice.HService=empty://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758, com.xiaohe.hservice.NotifyService=empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508 empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508 dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=11680&revision=0.2.5&side=provider&timestamp=1530606560940}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:58:00:074 Starting ZkClient event thread.
+2018-07-04 16:58:00:104 Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+2018-07-04 16:58:00:104 Client environment:host.name=huaxuinfo004-PC
+2018-07-04 16:58:00:105 Client environment:java.version=1.8.0_151
+2018-07-04 16:58:00:105 Client environment:java.vendor=Oracle Corporation
+2018-07-04 16:58:00:105 Client environment:java.home=C:\Program Files\Java\jre1.8.0_151
+2018-07-04 16:58:00:105 Client environment:java.class.path=C:\Program Files\Java\jre1.8.0_151\lib\resources.jar;C:\Program Files\Java\jre1.8.0_151\lib\rt.jar;C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_151\lib\jce.jar;C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar;F:\xiaohe\vehicle\target\classes;C:\Users\huaxuinfo001\.m2\repository\com\relops\snowflake\1.1\snowflake-1.1.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-context-support\3.2.3.RELEASE\spring-context-support-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-jdbc\3.2.3.RELEASE\spring-jdbc-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\huaxuinfo001\.m2\repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar;C:\Users\huaxuinfo001\.m2\repository\org\mybatis\mybatis\3.2.4\mybatis-3.2.4.jar;C:\Users\huaxuinfo001\.m2\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\druid\1.0.2\druid-1.0.2.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\fastjson\1.1.41\fastjson-1.1.41.jar;C:\Users\huaxuinfo001\.m2\repository\io\netty\netty-all\5.0.0.Alpha1\netty-all-5.0.0.Alpha1.jar;C:\Users\huaxuinfo001\.m2\repository\org\json\json\20150729\json-20150729.jar;C:\Users\huaxuinfo001\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\huaxuinfo001\.m2\repository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;C:\Users\huaxuinfo001\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar;C:\Users\huaxuinfo001\.m2\repository\com\sun\mail\javax.mail\1.5.6\javax.mail-1.5.6.jar;C:\Users\huaxuinfo001\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;E:\工作\java\car\hservice\trunk\target\classes;C:\Users\huaxuinfo001\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\huaxuinfo001\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\huaxuinfo001\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring\2.5.6.SEC03\spring-2.5.6.SEC03.jar;C:\Users\huaxuinfo001\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\huaxuinfo001\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\huaxuinfo001\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpclient-cache\4.5\httpclient-cache-4.5.jar
+2018-07-04 16:58:00:146 Client environment:java.library.path=C:\Program Files\Java\jre1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\NetSarang;d:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\Doctrine extensions for PHP\.;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36;E:\nodejs\;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\ext\ApacheJMeter_core.jar;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\jorphan.jar;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\logkit-2.0.jar;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36\;E:\java\apache-maven-3.5.0\bin;C:\Program Files (x86)\Java\jdk1.8.0_151\bin;E:\java\apache-tomcat-9.0.1\bin;C:\Users\huaxuinfo001\AppData\Roaming\npm;.
+2018-07-04 16:58:00:147 Client environment:java.io.tmpdir=C:\Users\HUAXUI~1\AppData\Local\Temp\
+2018-07-04 16:58:00:147 Client environment:java.compiler=<NA>
+2018-07-04 16:58:00:147 Client environment:os.name=Windows 7
+2018-07-04 16:58:00:147 Client environment:os.arch=amd64
+2018-07-04 16:58:00:148 Client environment:os.version=6.1
+2018-07-04 16:58:00:148 Client environment:user.name=huaxuinfo001
+2018-07-04 16:58:00:148 Client environment:user.home=C:\Users\huaxuinfo001
+2018-07-04 16:58:00:148 Client environment:user.dir=F:\xiaohe\vehicle
+2018-07-04 16:58:00:150 Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@13d4992d
+2018-07-04 16:58:00:204 Opening socket connection to server /127.0.0.1:2181
+2018-07-04 16:58:00:206 Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2018-07-04 16:58:00:371 Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1646303a5e60032, negotiated timeout = 30000
+2018-07-04 16:58:00:373 zookeeper state changed (SyncConnected)
+2018-07-04 16:58:00:374  [DUBBO] Register: dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:58:02:202  [DUBBO] Subscribe: provider://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:58:02:546  [DUBBO] Notify urls for subscribe url provider://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, urls: [empty://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-04 16:58:03:017 启动started....
+2018-07-04 16:58:03:037  [DUBBO] Register: consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=consumers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 16:58:03:412  [DUBBO] Subscribe: consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 16:58:04:161  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=11028&revision=0.2.5&side=provider&timestamp=1530694491794, empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 16:58:04:219  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x15713d56, /192.168.186.1:22359 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 16:58:04:219  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 16:58:04:514  [DUBBO] Refer dubbo service com.xiaohe.hservice.NotifyService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=tbox-v1&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:02:59:333 connect from ....../127.0.0.1:22407
+2018-07-04 17:03:42:425 
+2018-07-04 17:03:42:442 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:03:42:443 0102 (login) business
+2018-07-04 17:03:42:599 tboxid:F111111111113, channel not in memory
+2018-07-04 17:03:42:599 add to channel map:/127.0.0.1:22407
+2018-07-04 17:03:42:601 DeviceId:F111111111113, Time:180704090342
+2018-07-04 17:03:42:603 e781020009461111111111133c0a12070409032a0000001600dfe7
+2018-07-04 17:03:42:669 parse  0102 (login) business  end
+2018-07-04 17:04:03:001 recv controlDevice cmd
+2018-07-04 17:04:03:001 F111111111111,1
+2018-07-04 17:04:03:001 device not on line
+2018-07-04 17:04:03:001 handle remote control business end
+2018-07-04 17:04:22:115 recv controlDevice cmd
+2018-07-04 17:04:22:116 F111111111111,1
+2018-07-04 17:04:22:116 device not on line
+2018-07-04 17:04:22:116 handle remote control business end
+2018-07-04 17:04:32:905 
+2018-07-04 17:04:32:910 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:04:32:910 0102 (login) business
+2018-07-04 17:04:32:914 disconnect original channel:/127.0.0.1:22407
+2018-07-04 17:04:32:916 add to channel map:/127.0.0.1:22407
+2018-07-04 17:04:32:916 DeviceId:F111111111113, Time:180704090432
+2018-07-04 17:04:32:918 e781020009461111111111133c0a1207040904200000001600d2e7
+2018-07-04 17:04:32:965 parse  0102 (login) business  end
+2018-07-04 17:04:32:965 disconnect ....../127.0.0.1:22407
+2018-07-04 17:04:34:569 connect from ....../127.0.0.1:22431
+2018-07-04 17:04:37:320 
+2018-07-04 17:04:37:322 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:04:37:323 0102 (login) business
+2018-07-04 17:04:37:325 tboxid:F111111111113, channel not in memory
+2018-07-04 17:04:37:325 add to channel map:/127.0.0.1:22431
+2018-07-04 17:04:37:326 DeviceId:F111111111113, Time:180704090437
+2018-07-04 17:04:37:326 e781020009461111111111133c0a1207040904250000001600d7e7
+2018-07-04 17:04:37:422 parse  0102 (login) business  end
+2018-07-04 17:05:02:103 recv controlDevice cmd
+2018-07-04 17:05:02:103 F111111111111,1
+2018-07-04 17:05:02:103 device not on line
+2018-07-04 17:05:02:104 handle remote control business end
+2018-07-04 17:05:44:640 recv controlDevice cmd
+2018-07-04 17:05:44:640 F111111111111,2
+2018-07-04 17:05:44:641 device not on line
+2018-07-04 17:05:44:641 handle remote control business end
+2018-07-04 17:05:47:672 recv controlDevice cmd
+2018-07-04 17:05:47:672 F111111111111,1
+2018-07-04 17:05:47:673 device not on line
+2018-07-04 17:05:47:673 handle remote control business end
+2018-07-04 17:06:27:975  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:27:976  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:27:977  [DUBBO] disconected from /192.168.186.1:22356,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:29:390  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:06:54:124  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:57:647  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10452&revision=0.2.5&side=provider&timestamp=1530695217148], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:57:651  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x2d35a8cd, /192.168.186.1:22525 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:06:57:652  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:00:789 recv controlDevice cmd
+2018-07-04 17:07:00:789 F111111111111,1
+2018-07-04 17:07:00:790 device not on line
+2018-07-04 17:07:00:790 handle remote control business end
+2018-07-04 17:07:16:864 
+2018-07-04 17:07:16:867 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:07:16:868 0102 (login) business
+2018-07-04 17:07:16:873 disconnect original channel:/127.0.0.1:22431
+2018-07-04 17:07:16:874 add to channel map:/127.0.0.1:22431
+2018-07-04 17:07:16:874 DeviceId:F111111111113, Time:180704090716
+2018-07-04 17:07:16:875 e781020009461111111111133c0a1207040907100000001600e1e7
+2018-07-04 17:07:17:030 parse  0102 (login) business  end
+2018-07-04 17:07:17:030 disconnect ....../127.0.0.1:22431
+2018-07-04 17:07:28:979 connect from ....../127.0.0.1:22551
+2018-07-04 17:07:28:998 
+2018-07-04 17:07:29:000 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:07:29:000 0102 (login) business
+2018-07-04 17:07:29:003 tboxid:F111111111113, channel not in memory
+2018-07-04 17:07:29:003 add to channel map:/127.0.0.1:22551
+2018-07-04 17:07:29:003 DeviceId:F111111111113, Time:180704090729
+2018-07-04 17:07:29:004 e781020009461111111111133c0a12070409071d0000001600ece7
+2018-07-04 17:07:29:090 parse  0102 (login) business  end
+2018-07-04 17:07:32:132 recv controlDevice cmd
+2018-07-04 17:07:32:132 F111111111111,1
+2018-07-04 17:07:32:133 device not on line
+2018-07-04 17:07:32:133 handle remote control business end
+2018-07-04 17:07:44:093  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:44:094  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:44:098  [DUBBO] disconected from /192.168.186.1:22510,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:46:685  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	... 3 more
+2018-07-04 17:07:54:525  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10452&revision=0.2.5&side=provider&timestamp=1530695217148, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4488&revision=0.2.5&side=provider&timestamp=1530695274381], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:54:694  [DUBBO] Close old netty channel [id: 0x2d35a8cd, /192.168.186.1:22525 :> /192.168.186.1:20882] on create new netty channel [id: 0x24795874, /192.168.186.1:22619 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:07:54:694  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x24795874, /192.168.186.1:22619 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:08:08:022  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4488&revision=0.2.5&side=provider&timestamp=1530695274381], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:09:39:911 recv controlDevice cmd
+2018-07-04 17:09:39:911 F111111111111,1
+2018-07-04 17:09:39:911 device not on line
+2018-07-04 17:09:39:911 handle remote control business end
+2018-07-04 17:11:15:885 recv controlDevice cmd
+2018-07-04 17:11:15:886 F111111111111,1
+2018-07-04 17:11:15:886 device not on line
+2018-07-04 17:11:15:886 handle remote control business end
+2018-07-04 17:11:18:579  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:11:18:583  [DUBBO] disconected from /192.168.186.1:22603,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:11:18:583  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:11:19:731  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:11:50:044  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:17:20:348  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=11400&revision=0.2.5&side=provider&timestamp=1530695840200], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:17:20:356  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x27cdc3bd, /192.168.186.1:22802 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:17:20:356  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:17:48:028 disconnect ....../127.0.0.1:22551
+2018-07-04 17:17:48:467 connect from ....../127.0.0.1:22820
+2018-07-04 17:17:49:309 
+2018-07-04 17:17:49:311 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:17:49:311 0102 (login) business
+2018-07-04 17:17:49:316 tboxid:F111111111113, channel not in memory
+2018-07-04 17:17:49:316 add to channel map:/127.0.0.1:22820
+2018-07-04 17:17:49:316 DeviceId:F111111111113, Time:180704091749
+2018-07-04 17:17:49:317 e781020009461111111111133c0a1207040911310000001600d6e7
+2018-07-04 17:17:49:376 parse  0102 (login) business  end
+2018-07-04 17:19:05:859  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:05:860  [DUBBO] disconected from /192.168.186.1:22785,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:05:860  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:07:405  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:19:15:999  [DUBBO] Close old netty channel [id: 0x27cdc3bd, /192.168.186.1:22802 :> /192.168.186.1:20882] on create new netty channel [id: 0x2189bb9d, /192.168.186.1:22881 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:15:999  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x2189bb9d, /192.168.186.1:22881 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:16:126  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=11400&revision=0.2.5&side=provider&timestamp=1530695840200, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1828&revision=0.2.5&side=provider&timestamp=1530695955900], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:32:037  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1828&revision=0.2.5&side=provider&timestamp=1530695955900], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:44:777  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:44:780  [DUBBO] disconected from /192.168.186.1:22876,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:44:786  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:19:47:015  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:20:12:207  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:18:480  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=5096&revision=0.2.5&side=provider&timestamp=1530696018337], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:18:485  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x53671ba3, /192.168.186.1:22998 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:18:485  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:41:917 recv controlDevice cmd
+2018-07-04 17:20:41:918 F111111111111,1
+2018-07-04 17:20:41:918 device not on line
+2018-07-04 17:20:41:918 handle remote control business end
+2018-07-04 17:20:50:038  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:50:040  [DUBBO] Close netty channel [id: 0x53671ba3, /192.168.186.1:22998 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:20:50:041  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:03:491  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=5096&revision=0.2.5&side=provider&timestamp=1530696018337], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:03:498  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x07ea7f11, /192.168.186.1:23030 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:03:498  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:10:204 
+2018-07-04 17:21:10:206 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:21:10:207 0102 (login) business
+2018-07-04 17:21:10:211 disconnect original channel:/127.0.0.1:22820
+2018-07-04 17:21:10:211 add to channel map:/127.0.0.1:22820
+2018-07-04 17:21:10:212 DeviceId:F111111111113, Time:180704092110
+2018-07-04 17:21:10:212 e781020009461111111111133c0a12070409150a0000001600e9e7
+2018-07-04 17:21:10:256 parse  0102 (login) business  end
+2018-07-04 17:21:10:256 disconnect ....../127.0.0.1:22820
+2018-07-04 17:21:11:642 connect from ....../127.0.0.1:23037
+2018-07-04 17:21:14:532 
+2018-07-04 17:21:14:535 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:21:14:535 0102 (login) business
+2018-07-04 17:21:14:538 tboxid:F111111111113, channel not in memory
+2018-07-04 17:21:14:539 add to channel map:/127.0.0.1:23037
+2018-07-04 17:21:14:539 DeviceId:F111111111113, Time:180704092114
+2018-07-04 17:21:14:540 e781020009461111111111133c0a12070409150e0000001600ede7
+2018-07-04 17:21:14:600 parse  0102 (login) business  end
+2018-07-04 17:21:24:857 recv controlDevice cmd
+2018-07-04 17:21:24:857 F111111111111,1
+2018-07-04 17:21:24:857 device not on line
+2018-07-04 17:21:24:857 handle remote control business end
+2018-07-04 17:21:56:039  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:56:040  [DUBBO] Close netty channel [id: 0x07ea7f11, /192.168.186.1:23030 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:21:56:041  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:23:03:433  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:23:03:437  [DUBBO] disconected from /192.168.186.1:22981,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:23:14:225  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4376&revision=0.2.5&side=provider&timestamp=1530696194093], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:23:14:230  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x06aed82e, /192.168.186.1:23129 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:23:14:231  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:00:111 recv controlDevice cmd
+2018-07-04 17:24:00:112 F111111111111,1
+2018-07-04 17:24:00:112 device not on line
+2018-07-04 17:24:00:112 handle remote control business end
+2018-07-04 17:24:30:041  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:30:042  [DUBBO] Close netty channel [id: 0x06aed82e, /192.168.186.1:23129 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:30:043  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:39:977  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4376&revision=0.2.5&side=provider&timestamp=1530696194093], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:39:983  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x474cc739, /192.168.186.1:23174 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:24:39:984  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:25:069  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:25:071  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:25:072  [DUBBO] disconected from /192.168.186.1:23114,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:26:992  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:connection timed out
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: connection timed out
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:371)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:283)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	... 3 more
+2018-07-04 17:25:30:373  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10032&revision=0.2.5&side=provider&timestamp=1530696330112, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4376&revision=0.2.5&side=provider&timestamp=1530696194093], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:32:002  [DUBBO] Close old netty channel [id: 0x474cc739, /192.168.186.1:23174 :> /192.168.186.1:20882] on create new netty channel [id: 0x31d2dcdb, /192.168.186.1:23265 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:32:003  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x31d2dcdb, /192.168.186.1:23265 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:34:168  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:34:172  [DUBBO] disconected from /192.168.186.1:23236,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:34:174  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:37:032  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:connection timed out
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: connection timed out
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:371)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:283)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	... 3 more
+2018-07-04 17:25:44:822  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10032&revision=0.2.5&side=provider&timestamp=1530696330112, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12704&revision=0.2.5&side=provider&timestamp=1530696344670, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=4376&revision=0.2.5&side=provider&timestamp=1530696194093], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:45:042  [DUBBO] Close old netty channel [id: 0x31d2dcdb, /192.168.186.1:23265 :> /192.168.186.1:20882] on create new netty channel [id: 0x77b98bae, /192.168.186.1:23341 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:45:043  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x77b98bae, /192.168.186.1:23341 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:25:52:039  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10032&revision=0.2.5&side=provider&timestamp=1530696330112, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12704&revision=0.2.5&side=provider&timestamp=1530696344670], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:26:02:092  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12704&revision=0.2.5&side=provider&timestamp=1530696344670], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:26:05:448 recv controlDevice cmd
+2018-07-04 17:26:05:448 F111111111111,1
+2018-07-04 17:26:05:448 device not on line
+2018-07-04 17:26:05:448 handle remote control business end
+2018-07-04 17:26:23:410 disconnect ....../127.0.0.1:23037
+2018-07-04 17:26:23:736 connect from ....../127.0.0.1:23349
+2018-07-04 17:26:34:449 
+2018-07-04 17:26:34:452 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e711e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:26:34:452 0102 (login) business
+2018-07-04 17:26:34:457 tboxid:F111111111113, channel not in memory
+2018-07-04 17:26:34:457 add to channel map:/127.0.0.1:23349
+2018-07-04 17:26:34:457 DeviceId:F111111111113, Time:180704092634
+2018-07-04 17:26:34:458 e781020009461111111111133c0a120704091a220000001600cee7
+2018-07-04 17:26:34:506 parse  0102 (login) business  end
+2018-07-04 17:26:49:534 recv controlDevice cmd
+2018-07-04 17:26:49:534 F111111111113,1
+2018-07-04 17:26:49:534 ip info:/127.0.0.1:23349
+2018-07-04 17:26:49:547 send: e78600000f461111111111130562a50f0562000101010101010101010167e7
+2018-07-04 17:26:49:548 handle remote control business end
+2018-07-04 17:27:30:982 recv controlDevice cmd
+2018-07-04 17:27:30:982 F111111111113,1
+2018-07-04 17:27:30:982 ip info:/127.0.0.1:23349
+2018-07-04 17:27:30:983 send: e78600000f461111111111130563a50f0563000101010101010101010167e7
+2018-07-04 17:27:30:983 handle remote control business end
+2018-07-04 17:27:34:112  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:27:34:112  [DUBBO] disconected from /192.168.186.1:23320,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:27:34:118  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:27:36:103  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:27:55:344  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1200&revision=0.2.5&side=provider&timestamp=1530696475100, dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12704&revision=0.2.5&side=provider&timestamp=1530696344670], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:27:56:126  [DUBBO] Close old netty channel [id: 0x77b98bae, /192.168.186.1:23341 :> /192.168.186.1:20882] on create new netty channel [id: 0x21f26a74, /192.168.186.1:23448 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:27:56:126  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x21f26a74, /192.168.186.1:23448 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:28:02:032  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1200&revision=0.2.5&side=provider&timestamp=1530696475100], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:28:04:123 recv controlDevice cmd
+2018-07-04 17:28:04:124 F111111111113,1
+2018-07-04 17:28:04:124 ip info:/127.0.0.1:23349
+2018-07-04 17:28:04:124 send: e78600000f461111111111130564a50f0564000101010101010101010167e7
+2018-07-04 17:28:04:124 handle remote control business end
+2018-07-04 17:28:21:040 
+2018-07-04 17:28:21:042 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:28:21:042 0600  remote control response
+2018-07-04 17:28:21:042 deviceId:F111111111113
+2018-07-04 17:28:21:043 msgId:1364
+2018-07-04 17:28:21:043 result:0
+2018-07-04 17:28:21:043 safeStatus:0
+2018-07-04 17:28:21:043 doorStatus:0
+2018-07-04 17:28:21:043 lockStatus:0
+2018-07-04 17:28:21:043 windowStatus:0
+2018-07-04 17:28:21:143 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:28:21:143 parse 0600  remote control response finsihed
+2018-07-04 17:29:10:039  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:10:040  [DUBBO] Close netty channel [id: 0x21f26a74, /192.168.186.1:23448 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:10:041  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:20:351  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1200&revision=0.2.5&side=provider&timestamp=1530696475100], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:20:357  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x222bfed5, /192.168.186.1:23462 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:20:357  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:29:58:536 
+2018-07-04 17:29:58:538 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:29:58:538 0600  remote control response
+2018-07-04 17:29:58:538 deviceId:F111111111113
+2018-07-04 17:29:58:538 msgId:1364
+2018-07-04 17:29:58:539 result:0
+2018-07-04 17:29:58:539 safeStatus:0
+2018-07-04 17:29:58:539 doorStatus:0
+2018-07-04 17:29:58:539 lockStatus:0
+2018-07-04 17:29:58:539 windowStatus:0
+2018-07-04 17:30:01:583 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:30:01:583 parse 0600  remote control response finsihed
+2018-07-04 17:30:04:411  [DUBBO] The timeout response finally returned at 2018-07-04 17:30:04.411, response Response [id=17, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23462 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:30:04:487  [DUBBO] The timeout response finally returned at 2018-07-04 17:30:04.487, response Response [id=16, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23462 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:30:19:657  [DUBBO] The timeout response finally returned at 2018-07-04 17:30:19.657, response Response [id=15, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23462 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:30:24:104 
+2018-07-04 17:30:24:105 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:30:24:105 0600  remote control response
+2018-07-04 17:30:24:106 deviceId:F111111111113
+2018-07-04 17:30:24:106 msgId:1364
+2018-07-04 17:30:24:106 result:0
+2018-07-04 17:30:24:106 safeStatus:0
+2018-07-04 17:30:24:106 doorStatus:0
+2018-07-04 17:30:24:106 lockStatus:0
+2018-07-04 17:30:24:106 windowStatus:0
+2018-07-04 17:30:26:723  [DUBBO] The timeout response finally returned at 2018-07-04 17:30:26.723, response Response [id=19, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23462 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:30:27:169 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:30:27:169 parse 0600  remote control response finsihed
+2018-07-04 17:30:28:156  [DUBBO] The timeout response finally returned at 2018-07-04 17:30:28.156, response Response [id=20, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23462 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:10:035  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:10:036  [DUBBO] Close netty channel [id: 0x222bfed5, /192.168.186.1:23462 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:10:036  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:54:288 
+2018-07-04 17:31:54:289 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:31:54:289 0600  remote control response
+2018-07-04 17:31:54:289 deviceId:F111111111113
+2018-07-04 17:31:54:290 msgId:1364
+2018-07-04 17:31:54:290 result:0
+2018-07-04 17:31:54:290 safeStatus:0
+2018-07-04 17:31:54:290 doorStatus:0
+2018-07-04 17:31:54:290 lockStatus:0
+2018-07-04 17:31:54:290 windowStatus:0
+2018-07-04 17:31:54:336 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:31:54:336 parse 0600  remote control response finsihed
+2018-07-04 17:31:56:159  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1200&revision=0.2.5&side=provider&timestamp=1530696475100], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:56:165  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x2ae891ab, /192.168.186.1:23540 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:31:56:166  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:32:01:320 
+2018-07-04 17:32:01:321 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:32:01:321 0600  remote control response
+2018-07-04 17:32:01:322 deviceId:F111111111113
+2018-07-04 17:32:01:322 msgId:1364
+2018-07-04 17:32:01:322 result:0
+2018-07-04 17:32:01:322 safeStatus:0
+2018-07-04 17:32:01:322 doorStatus:0
+2018-07-04 17:32:01:322 lockStatus:0
+2018-07-04 17:32:01:322 windowStatus:0
+2018-07-04 17:32:04:311  [DUBBO] The timeout response finally returned at 2018-07-04 17:32:04.311, response Response [id=22, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23540 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:32:04:368 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:32:04:368 parse 0600  remote control response finsihed
+2018-07-04 17:32:04:768  [DUBBO] The timeout response finally returned at 2018-07-04 17:32:04.768, response Response [id=23, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:23540 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:33:00:120  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:33:00:121  [DUBBO] Close netty channel [id: 0x2ae891ab, /192.168.186.1:23540 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:33:00:122  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:34:59:999  [DUBBO] Close channel NettyChannel [channel=[id: 0x0dc25008, /192.168.186.1:23425 => /192.168.186.1:20881]], because heartbeat read idle time out: 180000ms, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:34:59:999  [DUBBO] Close netty channel [id: 0x0dc25008, /192.168.186.1:23425 => /192.168.186.1:20881], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:35:00:001  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:35:00:001  [DUBBO] disconected from /192.168.186.1:23425,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:12:543  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=1200&revision=0.2.5&side=provider&timestamp=1530696475100], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:12:549  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x55770ecf, /192.168.186.1:24665 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:12:549  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:20:074  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:20:076  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:20:080  [DUBBO] disconected from /192.168.186.1:24658,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:43:21:550  [DUBBO] client reconnect to 192.168.186.1:20882 find error . url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020) failed to connect to server /192.168.186.1:20882, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+2018-07-04 17:43:44:036  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:44:28:015  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10920&revision=0.2.5&side=provider&timestamp=1530697467844], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:44:28:018  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x67bfc06b, /192.168.186.1:24758 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:44:28:018  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:44:36:892 
+2018-07-04 17:44:36:895 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:44:36:895 0102 (login) business
+2018-07-04 17:44:36:898 disconnect original channel:/127.0.0.1:23349
+2018-07-04 17:44:36:899 add to channel map:/127.0.0.1:23349
+2018-07-04 17:44:36:899 DeviceId:F111111111113, Time:180704094436
+2018-07-04 17:44:36:900 e781020009461111111111133c0a120704092c240000001600fee7
+2018-07-04 17:44:36:962 parse  0102 (login) business  end
+2018-07-04 17:44:36:962 disconnect ....../127.0.0.1:23349
+2018-07-04 17:44:37:968 connect from ....../127.0.0.1:24775
+2018-07-04 17:44:40:463 disconnect ....../127.0.0.1:24775
+2018-07-04 17:44:40:809 connect from ....../127.0.0.1:24776
+2018-07-04 17:44:42:069 
+2018-07-04 17:44:42:071 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-04 17:44:42:071 0102 (login) business
+2018-07-04 17:44:42:074 tboxid:F111111111113, channel not in memory
+2018-07-04 17:44:42:074 add to channel map:/127.0.0.1:24776
+2018-07-04 17:44:42:074 DeviceId:F111111111113, Time:180704094442
+2018-07-04 17:44:42:075 e781020009461111111111133c0a120704092c2a0000001600f0e7
+2018-07-04 17:44:42:122 parse  0102 (login) business  end
+2018-07-04 17:44:48:288 recv controlDevice cmd
+2018-07-04 17:44:48:289 F111111111113,1
+2018-07-04 17:44:48:289 ip info:/127.0.0.1:24776
+2018-07-04 17:44:48:289 send: e78600000f461111111111130565a50f0565000101010101010101010167e7
+2018-07-04 17:44:48:289 handle remote control business end
+2018-07-04 17:46:01:721 
+2018-07-04 17:46:01:722 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be711e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-04 17:46:01:723 0600  remote control response
+2018-07-04 17:46:01:723 deviceId:F111111111113
+2018-07-04 17:46:01:723 msgId:1364
+2018-07-04 17:46:01:723 result:0
+2018-07-04 17:46:01:723 safeStatus:0
+2018-07-04 17:46:01:723 doorStatus:0
+2018-07-04 17:46:01:723 lockStatus:0
+2018-07-04 17:46:01:723 windowStatus:0
+2018-07-04 17:46:04:779 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-04 17:46:04:780 parse 0600  remote control response finsihed
+2018-07-04 17:46:08:265  [DUBBO] The timeout response finally returned at 2018-07-04 17:46:08.264, response Response [id=30, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:24758 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:08:298  [DUBBO] The timeout response finally returned at 2018-07-04 17:46:08.298, response Response [id=31, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:24758 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:36:047  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020, urls: [empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&side=consumer&timestamp=1530694683020], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:36:048  [DUBBO] Close netty channel [id: 0x67bfc06b, /192.168.186.1:24758 => /192.168.186.1:20882], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:36:050  [DUBBO] disconected from /192.168.186.1:20882,url:dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=10768&revision=0.2.5&side=consumer&timestamp=1530694683020, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:47:588  [DUBBO] All clients has discontected from /192.168.186.1:20881. You can graceful shutdown now., dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 17:46:47:590  [DUBBO] disconected from /192.168.186.1:24743,url:dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=10768&side=provider&timestamp=1530694679343, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-04 18:17:14:141 An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-04 18:17:14:142 disconnect ....../127.0.0.1:24776
+2018-07-04 18:17:22:069 Session 0x1646303a5e60032 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.doIO(ClientCnxn.java:858)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1130)
+2018-07-04 18:17:22:170 zookeeper state changed (Disconnected)
+2018-07-04 18:17:23:485 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:24:486 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:26:378 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:27:375 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:28:897 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:29:898 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:31:845 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:32:845 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:34:779 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:35:780 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:37:840 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:38:840 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:40:188 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:41:188 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:42:453 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:43:453 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:44:693 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:45:693 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:47:292 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:48:292 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:50:243 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:51:253 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:52:444 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:53:445 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:54:612 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:55:612 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:57:680 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:17:58:680 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:17:59:900 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:18:00:900 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:18:02:549 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:18:03:550 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:18:05:430 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:18:06:430 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:18:08:480 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:18:09:480 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2018-07-04 18:18:11:310 Opening socket connection to server 127.0.0.1/127.0.0.1:2181
+2018-07-04 18:18:12:310 Session 0x1646303a5e60032 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)

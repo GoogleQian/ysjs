@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付成功</title>
+    <link rel="stylesheet" href="./src/lib/weui.css">
+    <style>
+        html,
+        body,
+        .box {
+            height: 100%;
+            position: relative;
+            text-align: center;
+        }
+
+        .box {
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+
+        .toIndex {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        a {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <i class="weui-icon-success weui-icon_msg"></i>
+        <p style="margin-top: 20px;">支付成功，请按键，按键后设备将出水..</p>
+        <div class="toIndex">
+            <a href="javascript:void(0);" class="continue weui-btn weui-btn_primary">继续购买</a>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $('.continue').on('click', function () {
+            // var devId = localStorage.getItem('devId')            
+            var url = './index.html' + location.hash;
+            window.location.href = url;
+        })
+    </script>
+</body>
+
+</html>

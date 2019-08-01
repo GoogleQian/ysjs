@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaohe.v2v.mapper.WaterDataDao">
+
+	<update id="updateCreateTime" parameterType="com.xiaohe.hservice.WaterBaseData">
+		update tb_device
+		set shake_hand_time =now(),show_temp=#{showTemp}<!-- ,show_temp=#{showTemp} -->
+		where imei = #{IMEI};
+	</update>	
+	
+	<update id="updateStatus" parameterType="com.xiaohe.hservice.WaterBaseData"> 
+		update tb_device 
+		set machine_status = #{machineStatus} 
+		where imei = #{IMEI};
+	</update>
+
+	<insert id="insertWaterQuality" parameterType="com.xiaohe.hservice.WaterBaseData">
+		insert into
+		tb_history(tds,purify_tds,tbdt,purify_tbdt,color,purify_color,amount,device_id,record_time)
+		values
+		(#{inTds},#{outTds},#{inTurbidity},#{outTurbidity},#{inChroma},#{outChroma},#{reportAmount},#{devMac},now())
+	</insert>
+
+	<insert id="insertStatus" parameterType="com.xiaohe.hservice.WaterBaseData">
+		insert into
+		tb_status(amount_status,change_water_status,rinse_status,disinfection_status,child_lock_status,temp,water_level_status,in_water_status,pass_one,pass_two,pass_third,pass_four,heating_status,refrigeration_status,in_tds,out_tds,create_time,erro_code,model_strength,time_control,imei)
+		values
+		(#{amountStatus},#{changeWaterStatus},#{rinseStatus},#{disinfectionStatus},#{childLockStatus},#{tem},#{waterLevelStatus},#{inWaterStatus},#{outPassOne},#{outPassTwo},#{outPassThird},#{outPassFour},#{heatingStatus},#{refrigerationStatus},#{inTds},#{outTds},now(),#{erroCode},#{modelStrength},#{timingState},#{IMEI})
+	</insert>
+
+	<select id="selectDevIdByIMEI" resultType="String">
+		select device_id from tb_device where imei=#{imei}
+	</select>
+	
+	<select id="selectUrl" resultType="String">
+		select value from tb_sys_para p where p.key=#{key}
+	</select>
+	<select id="selectVersionByImei" resultType="String">
+		select hardware_version from tb_device p where p.imei=#{imei}
+	</select>
+	<select id="isInDB" resultType="int">
+		select count(id) from tb_device p where p.imei=#{imei}
+	</select>
+	
+	
+</mapper>

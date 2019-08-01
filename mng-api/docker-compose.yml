@@ -1,0 +1,36 @@
+version: '3'
+services:
+  mngbackend-service:
+    image: znss-api-mngbackend:0.0.9
+    container_name: znss-api-mngbackend
+    build:
+      context: mngbackend-api
+      dockerfile: Dockerfile-mngbackend-api
+    volumes:
+      - /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    command:
+      - echo 'Asia/Shanghai' >/etc/timezone
+    restart: always
+    networks:
+      - znss
+    ports:
+      - 9191:9191
+
+  znss-node-service:
+    image: znss-node-mngbackend:0.1.1
+    container_name: znss-node-mngbackend
+    build:
+      context: mngbackend-web
+      dockerfile: Dockerfile-mngbackend-node
+    command:
+      node /opt/dist/server.js
+    restart: always
+    networks:
+      - znss
+    ports:
+      - 8192:8192
+
+
+networks:
+  znss:
+    external: false

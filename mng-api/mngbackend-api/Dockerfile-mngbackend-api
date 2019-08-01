@@ -1,0 +1,8 @@
+FROM java:8
+
+EXPOSE 9191
+
+WORKDIR /opt/znss/
+COPY znss-mngbackend-api-0.0.9.jar  znss-mngbackend-api.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","znss-mngbackend-api.jar"]                                                                                     
+

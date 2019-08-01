@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="./src/lib/weui.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            position: relative;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page input js_show">
+        <!-- <div class="page__hd">
+                    <h1 class="page__title">Input</h1>
+                    <p class="page__desc">表单输入</p>
+                </div> -->
+        <div class="page__bd">
+
+            <div class="weui-cells__title">意见反馈</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input reportName" placeholder="请输入联系人">
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_form">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">手机号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input phoneNum" placeholder="请输入手机号">
+                    </div>
+                </div>
+                <div class="weui-cells__title" style="border-top: 1px solid #e5e5e5; color: #333;font-size: 17px;">内容</div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea class="weui-textarea msg" placeholder="请输入文本" rows="3"></textarea>
+                            <!-- <div class="weui-textarea-counter"><span>0</span>/200</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="weui-btn-area">
+                <a class="submit weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.submit').on('click', function () {
+                var devCode = localStorage.getItem('devId');
+                var phoneNum = $('.phoneNum').val();
+                var reportName = $('.reportName').val();
+                var msg = $('.msg').val()
+                var data = { phoneNum: phoneNum, reportName: reportName, msg: msg, devCode: devCode || '123' }
+                $.ajax({
+                    url: 'http://iotsvr.he-live.com:6518/home/complaints',
+                    method: 'POST',
+                    data: JSON.stringify(data),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    success: function (res) {
+                        alert('提交成功');
+                        location.href = './index.html' + '#' + devCode;
+                    },
+                    error: function(error){
+                        console.log(error)
+                        (JSON.stringify(error))
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

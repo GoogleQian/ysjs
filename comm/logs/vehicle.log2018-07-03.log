@@ -1,0 +1,178 @@
+2018-07-03 16:32:07:590 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6f2b958e: startup date [Tue Jul 03 16:32:07 CST 2018]; root of context hierarchy
+2018-07-03 16:32:07:699 Loading XML bean definitions from class path resource [server-spring.xml]
+2018-07-03 16:32:08:756 Loading XML bean definitions from class path resource [appcontext-consumer.xml]
+2018-07-03 16:32:08:796 using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-07-03 16:32:08:861 Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-07-03 16:32:09:764 Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-07-03 16:32:10:185 Skipping MapperFactoryBean with name 'carDataDao' and 'com.xiaohe.v2v.mapper.CarDataDao' mapperInterface. Bean already defined with the same name!
+2018-07-03 16:32:10:185 No MyBatis mapper was found in '[com.xiaohe.v2v.mapper]' package. Please check your configuration.
+2018-07-03 16:32:10:224 Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a187f14: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tcpServer,tbox-v1,com.alibaba.dubbo.config.RegistryConfig,notifyService,dubbo,com.xiaohe.hservice.HService,hService,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,carDataDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2018-07-03 16:32:11:388 {dataSource-1} inited
+2018-07-03 16:32:11:742  [DUBBO] The service ready on spring started. service: com.xiaohe.hservice.HService, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:11:871  [DUBBO] Export dubbo service com.xiaohe.hservice.HService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:11:871  [DUBBO] Export dubbo service com.xiaohe.hservice.HService to url dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:11:871  [DUBBO] Register dubbo service com.xiaohe.hservice.HService url dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=tbox-v1&dubbo=2.5.3&pid=12508&registry=zookeeper&timestamp=1530606731749, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:052  [DUBBO] Start NettyServer bind /0.0.0.0:20881, export /192.168.186.1:20881, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:087  [DUBBO] Load registry store file C:\Users\huaxuinfo001\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.xiaohe.hservice.HService=empty://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=14996&side=provider&timestamp=1530263973126, com.xiaohe.hservice.NotifyService=empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=14996&side=consumer&timestamp=1530263973777 empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=14996&side=consumer&timestamp=1530263973777 dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=14828&revision=0.2.5&side=provider&timestamp=1530264543799}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:105 Starting ZkClient event thread.
+2018-07-03 16:32:12:111 Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+2018-07-03 16:32:12:111 Client environment:host.name=huaxuinfo004-PC
+2018-07-03 16:32:12:111 Client environment:java.version=1.8.0_151
+2018-07-03 16:32:12:111 Client environment:java.vendor=Oracle Corporation
+2018-07-03 16:32:12:111 Client environment:java.home=C:\Program Files\Java\jre1.8.0_151
+2018-07-03 16:32:12:111 Client environment:java.class.path=C:\Program Files\Java\jre1.8.0_151\lib\resources.jar;C:\Program Files\Java\jre1.8.0_151\lib\rt.jar;C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_151\lib\jce.jar;C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar;F:\xiaohe\vehicle\target\classes;C:\Users\huaxuinfo001\.m2\repository\com\relops\snowflake\1.1\snowflake-1.1.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-context-support\3.2.3.RELEASE\spring-context-support-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-jdbc\3.2.3.RELEASE\spring-jdbc-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\huaxuinfo001\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\huaxuinfo001\.m2\repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar;C:\Users\huaxuinfo001\.m2\repository\org\mybatis\mybatis\3.2.4\mybatis-3.2.4.jar;C:\Users\huaxuinfo001\.m2\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\druid\1.0.2\druid-1.0.2.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\fastjson\1.1.41\fastjson-1.1.41.jar;C:\Users\huaxuinfo001\.m2\repository\io\netty\netty-all\5.0.0.Alpha1\netty-all-5.0.0.Alpha1.jar;C:\Users\huaxuinfo001\.m2\repository\org\json\json\20150729\json-20150729.jar;C:\Users\huaxuinfo001\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\huaxuinfo001\.m2\repository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;C:\Users\huaxuinfo001\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar;C:\Users\huaxuinfo001\.m2\repository\com\sun\mail\javax.mail\1.5.6\javax.mail-1.5.6.jar;C:\Users\huaxuinfo001\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;E:\工作\java\car\hservice\trunk\target\classes;C:\Users\huaxuinfo001\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\huaxuinfo001\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\huaxuinfo001\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;C:\Users\huaxuinfo001\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\huaxuinfo001\.m2\repository\org\springframework\spring\2.5.6.SEC03\spring-2.5.6.SEC03.jar;C:\Users\huaxuinfo001\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\huaxuinfo001\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\huaxuinfo001\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\huaxuinfo001\.m2\repository\org\apache\httpcomponents\httpclient-cache\4.5\httpclient-cache-4.5.jar
+2018-07-03 16:32:12:112 Client environment:java.library.path=C:\Program Files\Java\jre1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\NetSarang;d:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\Doctrine extensions for PHP\.;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36;E:\nodejs\;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\ext\ApacheJMeter_core.jar;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\jorphan.jar;E:\工作\soft\jmeter\apache-jmeter-4.0\lib\logkit-2.0.jar;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\huaxuinfo001\AppData\Local\Programs\Python\Python36\;E:\java\apache-maven-3.5.0\bin;C:\Program Files (x86)\Java\jdk1.8.0_151\bin;E:\java\apache-tomcat-9.0.1\bin;C:\Users\huaxuinfo001\AppData\Roaming\npm;.
+2018-07-03 16:32:12:112 Client environment:java.io.tmpdir=C:\Users\HUAXUI~1\AppData\Local\Temp\
+2018-07-03 16:32:12:112 Client environment:java.compiler=<NA>
+2018-07-03 16:32:12:112 Client environment:os.name=Windows 7
+2018-07-03 16:32:12:112 Client environment:os.arch=amd64
+2018-07-03 16:32:12:112 Client environment:os.version=6.1
+2018-07-03 16:32:12:112 Client environment:user.name=huaxuinfo001
+2018-07-03 16:32:12:112 Client environment:user.home=C:\Users\huaxuinfo001
+2018-07-03 16:32:12:113 Client environment:user.dir=F:\xiaohe\vehicle
+2018-07-03 16:32:12:113 Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@13d4992d
+2018-07-03 16:32:12:121 Opening socket connection to server /127.0.0.1:2181
+2018-07-03 16:32:12:123 Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2018-07-03 16:32:12:166 Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1645f4299960001, negotiated timeout = 30000
+2018-07-03 16:32:12:168 zookeeper state changed (SyncConnected)
+2018-07-03 16:32:12:169  [DUBBO] Register: dubbo://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:287  [DUBBO] Subscribe: provider://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:424  [DUBBO] Notify urls for subscribe url provider://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758, urls: [empty://192.168.186.1:20881/com.xiaohe.hservice.HService?anyhost=true&application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.HService&methods=getVichData,controlDevice&pid=12508&side=provider&timestamp=1530606731758], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-07-03 16:32:12:500 启动started....
+2018-07-03 16:32:12:538  [DUBBO] Register: consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=consumers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:12:816  [DUBBO] Subscribe: consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:13:024  [DUBBO] Notify urls for subscribe url consumer://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508, urls: [dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=backend-v1&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=11680&revision=0.2.5&side=provider&timestamp=1530606560940, empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508, empty://192.168.186.1/com.xiaohe.hservice.NotifyService?application=tbox-v1&category=routers&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&side=consumer&timestamp=1530606732508], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:13:043  [DUBBO] Successed connect to server /192.168.186.1:20882 from NettyClient 192.168.186.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x15713d56, /192.168.186.1:11218 => /192.168.186.1:20882]], dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:13:043  [DUBBO] Start NettyClient huaxuinfo004-PC/192.168.186.1 connect to the server /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:13:051  [DUBBO] Refer dubbo service com.xiaohe.hservice.NotifyService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=tbox-v1&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&revision=0.2.5&side=consumer&timestamp=1530606732508, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:32:53:652 connect from ....../127.0.0.1:11225
+2018-07-03 16:33:11:831 
+2018-07-03 16:33:11:838 e701020080461111111111133c0a484c543430315f56323031333334323031382d30352d3037005100393848500e203339563030543134353138303533343732353836373733323033343535333435333436303034333933343030363231363839383630343139313531383731343136323136f00c0000000000000000000000000000000000001542920001f9e834e7
+2018-07-03 16:33:11:838 0102 (login) business
+2018-07-03 16:33:11:939 tboxid:F111111111113, channel not in memory
+2018-07-03 16:33:11:939 add to channel map:/127.0.0.1:11225
+2018-07-03 16:33:11:940 DeviceId:F111111111113, Time:180703083311
+2018-07-03 16:33:11:943 e781020009461111111111133c0a12070308210b0000001600dae7
+2018-07-03 16:33:12:011 parse  0102 (login) business  end
+2018-07-03 16:33:28:587 recv controlDevice cmd
+2018-07-03 16:33:28:588 F111111111113,1
+2018-07-03 16:33:28:588 ip info:/127.0.0.1:11225
+2018-07-03 16:33:28:598 send: e78600000f461111111111130558a50f0558000101010101010101010167e7
+2018-07-03 16:33:28:598 handle remote control business end
+2018-07-03 16:34:30:119 recv controlDevice cmd
+2018-07-03 16:34:30:120 F111111111113,1
+2018-07-03 16:34:30:120 ip info:/127.0.0.1:11225
+2018-07-03 16:34:30:122 send: e78600000f461111111111130559a50f0559000101010101010101010167e7
+2018-07-03 16:34:30:122 handle remote control business end
+2018-07-03 16:34:42:018 
+2018-07-03 16:34:42:020 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-03 16:34:42:020 0600  remote control response
+2018-07-03 16:34:42:021 deviceId:F111111111113
+2018-07-03 16:34:42:021 msgId:1364
+2018-07-03 16:34:42:021 result:0
+2018-07-03 16:34:42:021 safeStatus:0
+2018-07-03 16:34:42:021 doorStatus:0
+2018-07-03 16:34:42:021 lockStatus:0
+2018-07-03 16:34:42:022 windowStatus:0
+2018-07-03 16:34:42:167 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-03 16:34:42:168 parse 0600  remote control response finsihed
+2018-07-03 16:34:56:338 
+2018-07-03 16:34:56:340 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-03 16:34:56:340 0600  remote control response
+2018-07-03 16:34:56:340 deviceId:F111111111113
+2018-07-03 16:34:56:341 msgId:1364
+2018-07-03 16:34:56:341 result:0
+2018-07-03 16:34:56:341 safeStatus:0
+2018-07-03 16:34:56:341 doorStatus:0
+2018-07-03 16:34:56:341 lockStatus:0
+2018-07-03 16:34:56:341 windowStatus:0
+2018-07-03 16:34:56:451 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-03 16:34:56:452 parse 0600  remote control response finsihed
+2018-07-03 16:35:14:055 recv controlDevice cmd
+2018-07-03 16:35:14:055 F111111111113,1
+2018-07-03 16:35:14:055 ip info:/127.0.0.1:11225
+2018-07-03 16:35:14:057 send: e78600000f46111111111113055aa50f055a000101010101010101010167e7
+2018-07-03 16:35:14:057 handle remote control business end
+2018-07-03 16:35:56:691 
+2018-07-03 16:35:56:692 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-03 16:35:56:692 0600  remote control response
+2018-07-03 16:35:56:692 deviceId:F111111111113
+2018-07-03 16:35:56:693 msgId:1364
+2018-07-03 16:35:56:693 result:0
+2018-07-03 16:35:56:693 safeStatus:0
+2018-07-03 16:35:56:693 doorStatus:0
+2018-07-03 16:35:56:693 lockStatus:0
+2018-07-03 16:35:56:693 windowStatus:0
+2018-07-03 16:35:58:152  [DUBBO] The timeout response finally returned at 2018-07-03 16:35:58.151, response Response [id=4, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.186.1:11218 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+2018-07-03 16:35:58:152  [DUBBO] Although retry the method notifyResul in the service com.xiaohe.hservice.NotifyService was successful by the provider 192.168.186.1:20882, but there have been failed providers [192.168.186.1:20882] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.186.1 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: notifyResul, provider: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&revision=0.2.5&side=consumer&timestamp=1530606732508, cause: Waiting server-side response timeout. start time: 2018-07-03 16:35:56.694, end time: 2018-07-03 16:35:57.695, client elapsed: 0 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=notifyResul, parameterTypes=[class java.lang.String, int, short], arguments=[F111111111113, 0, 1364], attachments={path=com.xiaohe.hservice.NotifyService, interface=com.xiaohe.hservice.NotifyService, version=0.0.0}]], channel: /192.168.186.1:11218 -> /192.168.186.1:20882, dubbo version: 2.5.3, current host: 192.168.186.1
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: notifyResul, provider: dubbo://192.168.186.1:20882/com.xiaohe.hservice.NotifyService?anyhost=true&application=tbox-v1&check=false&dubbo=2.5.3&interface=com.xiaohe.hservice.NotifyService&methods=notifyVichDataPassive,notifyVihData,notifyWarning,notifyResul&pid=12508&revision=0.2.5&side=consumer&timestamp=1530606732508, cause: Waiting server-side response timeout. start time: 2018-07-03 16:35:56.694, end time: 2018-07-03 16:35:57.695, client elapsed: 0 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=notifyResul, parameterTypes=[class java.lang.String, int, short], arguments=[F111111111113, 0, 1364], attachments={path=com.xiaohe.hservice.NotifyService, interface=com.xiaohe.hservice.NotifyService, version=0.0.0}]], channel: /192.168.186.1:11218 -> /192.168.186.1:20882
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.notifyResul(proxy0.java)
+	at com.xiaohe.v2v.bean.VihCarResponse.paserData(VihCarResponse.java:45)
+	at com.xiaohe.v2v.server.MsgFrame.parseRemoteCtlResponse(MsgFrame.java:495)
+	at com.xiaohe.v2v.server.MsgFrame.reactor(MsgFrame.java:151)
+	at com.xiaohe.v2v.server.NProtocolHandler.messageReceived(NProtocolHandler.java:38)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2018-07-03 16:35:56.694, end time: 2018-07-03 16:35:57.695, client elapsed: 0 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=notifyResul, parameterTypes=[class java.lang.String, int, short], arguments=[F111111111113, 0, 1364], attachments={path=com.xiaohe.hservice.NotifyService, interface=com.xiaohe.hservice.NotifyService, version=0.0.0}]], channel: /192.168.186.1:11218 -> /192.168.186.1:20882
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 33 more
+2018-07-03 16:35:58:206 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-03 16:35:58:206 parse 0600  remote control response finsihed
+2018-07-03 16:36:11:600 recv controlDevice cmd
+2018-07-03 16:36:11:601 F111111111113,1
+2018-07-03 16:36:11:601 ip info:/127.0.0.1:11225
+2018-07-03 16:36:11:602 send: e78600000f46111111111113055ba50f055b000101010101010101010167e7
+2018-07-03 16:36:11:602 handle remote control business end
+2018-07-03 16:36:59:239 
+2018-07-03 16:36:59:240 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-03 16:36:59:240 0600  remote control response
+2018-07-03 16:36:59:240 deviceId:F111111111113
+2018-07-03 16:36:59:240 msgId:1364
+2018-07-03 16:36:59:240 result:0
+2018-07-03 16:36:59:240 safeStatus:0
+2018-07-03 16:36:59:240 doorStatus:0
+2018-07-03 16:36:59:240 lockStatus:0
+2018-07-03 16:36:59:240 windowStatus:0
+2018-07-03 16:36:59:352 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-03 16:36:59:352 parse 0600  remote control response finsihed
+2018-07-03 16:39:33:850 
+2018-07-03 16:39:33:851 e70600001a4611111111111306a6a10105540000031f0f603300f0000000000000000000a00000009be7
+2018-07-03 16:39:33:851 0600  remote control response
+2018-07-03 16:39:33:852 deviceId:F111111111113
+2018-07-03 16:39:33:852 msgId:1364
+2018-07-03 16:39:33:852 result:0
+2018-07-03 16:39:33:852 safeStatus:0
+2018-07-03 16:39:33:852 doorStatus:0
+2018-07-03 16:39:33:853 lockStatus:0
+2018-07-03 16:39:33:853 windowStatus:0
+2018-07-03 16:39:33:975 send response:e7800100054611111111111306a606a6060000c6e7
+2018-07-03 16:39:33:976 parse 0600  remote control response finsihed

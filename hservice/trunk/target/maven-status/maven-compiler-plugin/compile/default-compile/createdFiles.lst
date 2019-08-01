@@ -1,0 +1,6 @@
+com\xiaohe\entity\PassageEntitys.class
+com\xiaohe\entity\DevUserConfig.class
+com\xiaohe\hservice\HService.class
+com\xiaohe\entity\DevSysConfig.class
+com\xiaohe\hservice\NotifyService.class
+com\xiaohe\hservice\WaterBaseData.class

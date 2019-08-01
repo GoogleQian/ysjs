@@ -1,0 +1,6 @@
+FROM node:7.3.0
+EXPOSE 8192
+WORKDIR /opt
+COPY dist /opt/dist
+RUN  cd /opt/dist && npm install
+ENTRYPOINT ["node","/opt/dist/server.js"]                                                                        

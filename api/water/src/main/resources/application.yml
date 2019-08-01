@@ -1,0 +1,16 @@
+server:
+  port: 6518
+  session-timeout: 30
+  tomcat.max-threads: 800
+  tomcat.uri-encoding: UTF-8
+  tomcat:
+    max-http-header-size: 8192
+
+
+spring:
+    application:
+    name: water-api-v1
+
+
+
+
